@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import ai.timefold.solver.core.api.score.buildin.hardmediumsoft.HardMediumSoftScore;
 import ai.timefold.solver.core.api.solver.SolutionManager;
 import ai.timefold.solver.core.api.solver.SolverFactory;
+
 import kg.alatoo.sayakat.planner.domain.Pace;
 import kg.alatoo.sayakat.planner.domain.TripSolution;
 import kg.alatoo.sayakat.planner.greedy.GreedyPlanner;
@@ -45,5 +46,19 @@ class PlannerSmokeTest {
 
         assertThat(solved.getScore().isFeasible()).as(solved.getScore().toString()).isTrue();
         assertThat(solved.getScore().mediumScore()).isGreaterThanOrEqualTo(greedyScore.mediumScore());
+    }
+
+    @Test
+    void hybridNeverLosesToGreedyWarmStart() {
+        TripSolution greedy = GreedyPlanner.solve(
+                SyntheticInstances.generate(100, 7, Pace.MODERATE, 105_000, Set.of("LAKE", "HIKING"), JULY, 3));
+        SolverFactory<TripSolution> factory = PlannerSolverFactory.create(PlannerSolverFactory.Mode.FULL, 3);
+        SolutionManager<TripSolution, HardMediumSoftScore> manager = SolutionManager.create(factory);
+        HardMediumSoftScore greedyScore = manager.update(greedy);
+
+        TripSolution solved = factory.buildSolver().solve(greedy);
+
+        assertThat(solved.getScore().isFeasible()).isTrue();
+        assertThat(solved.getScore().compareTo(greedyScore)).isGreaterThanOrEqualTo(0);
     }
 }

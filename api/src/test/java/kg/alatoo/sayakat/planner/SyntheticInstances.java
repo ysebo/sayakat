@@ -9,13 +9,13 @@ import java.util.Set;
 import kg.alatoo.sayakat.planner.domain.Lodging;
 import kg.alatoo.sayakat.planner.domain.Pace;
 import kg.alatoo.sayakat.planner.domain.TripSolution;
-import kg.alatoo.sayakat.planner.solver.TripProblemFactory;
+import kg.alatoo.sayakat.planner.routing.GeoPoint;
+import kg.alatoo.sayakat.planner.routing.HaversineMatrixBuilder;
+import kg.alatoo.sayakat.planner.routing.TravelMatrix;
 import kg.alatoo.sayakat.planner.solver.TripProblemFactory.CandidateLodging;
 import kg.alatoo.sayakat.planner.solver.TripProblemFactory.CandidatePoi;
 import kg.alatoo.sayakat.planner.solver.TripProblemFactory.TripRequest;
-import kg.alatoo.sayakat.routing.GeoPoint;
-import kg.alatoo.sayakat.routing.HaversineMatrixBuilder;
-import kg.alatoo.sayakat.routing.TravelMatrix;
+import kg.alatoo.sayakat.planner.solver.TripProblemFactory;
 
 public final class SyntheticInstances {
 

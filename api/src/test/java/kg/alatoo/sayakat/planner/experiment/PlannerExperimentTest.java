@@ -17,8 +17,9 @@ import ai.timefold.solver.core.api.score.buildin.hardmediumsoft.HardMediumSoftSc
 import ai.timefold.solver.core.api.solver.SolutionManager;
 import ai.timefold.solver.core.api.solver.Solver;
 import ai.timefold.solver.core.api.solver.SolverFactory;
-import kg.alatoo.sayakat.planner.PlannerSolverFactory;
+
 import kg.alatoo.sayakat.planner.PlannerSolverFactory.Mode;
+import kg.alatoo.sayakat.planner.PlannerSolverFactory;
 import kg.alatoo.sayakat.planner.SyntheticInstances;
 import kg.alatoo.sayakat.planner.domain.Pace;
 import kg.alatoo.sayakat.planner.domain.TripSolution;
@@ -64,8 +65,11 @@ class PlannerExperimentTest {
 
                     runTimefold(results, null, "TF_CH", Mode.CONSTRUCTION_ONLY, 60, instance, size, days, seed);
 
+                    Supplier<TripSolution> warmStart = () -> GreedyPlanner.solve(instance.get());
                     for (int limit : limits) {
                         runTimefold(results, convergence, "TF_LS_" + limit + "s", Mode.FULL, limit, instance,
+                                size, days, seed);
+                        runTimefold(results, convergence, "HYBRID_" + limit + "s", Mode.FULL, limit, warmStart,
                                 size, days, seed);
                     }
                     results.flush();

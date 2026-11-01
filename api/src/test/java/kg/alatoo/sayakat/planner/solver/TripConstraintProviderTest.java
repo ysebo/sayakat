@@ -12,6 +12,7 @@ import java.util.Set;
 import org.junit.jupiter.api.Test;
 
 import ai.timefold.solver.test.api.score.stream.ConstraintVerifier;
+
 import kg.alatoo.sayakat.planner.domain.Pace;
 import kg.alatoo.sayakat.planner.domain.TripDay;
 import kg.alatoo.sayakat.planner.domain.TripSettings;
