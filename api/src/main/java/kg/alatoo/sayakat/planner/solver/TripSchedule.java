@@ -8,7 +8,7 @@ import kg.alatoo.sayakat.planner.domain.Lodging;
 import kg.alatoo.sayakat.planner.domain.TripDay;
 import kg.alatoo.sayakat.planner.domain.TripSettings;
 import kg.alatoo.sayakat.planner.domain.Visit;
-import kg.alatoo.sayakat.routing.TravelMatrix;
+import kg.alatoo.sayakat.planner.routing.TravelMatrix;
 
 public record TripSchedule(
         List<DayResult> days,

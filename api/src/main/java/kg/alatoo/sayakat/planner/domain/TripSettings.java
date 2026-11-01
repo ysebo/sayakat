@@ -3,7 +3,7 @@ package kg.alatoo.sayakat.planner.domain;
 import java.time.LocalDate;
 import java.util.Set;
 
-import kg.alatoo.sayakat.routing.TravelMatrix;
+import kg.alatoo.sayakat.planner.routing.TravelMatrix;
 
 public record TripSettings(
         LocalDate startDate,

@@ -7,6 +7,8 @@ import ai.timefold.solver.core.config.constructionheuristic.ConstructionHeuristi
 import ai.timefold.solver.core.config.localsearch.LocalSearchPhaseConfig;
 import ai.timefold.solver.core.config.solver.SolverConfig;
 import ai.timefold.solver.core.config.solver.termination.TerminationConfig;
+
+import kg.alatoo.sayakat.planner.PlannerSolverFactory.Mode;
 import kg.alatoo.sayakat.planner.domain.TripDay;
 import kg.alatoo.sayakat.planner.domain.TripSolution;
 import kg.alatoo.sayakat.planner.domain.Visit;

@@ -7,8 +7,8 @@ import java.util.Set;
 import kg.alatoo.sayakat.planner.domain.TripDay;
 import kg.alatoo.sayakat.planner.domain.TripSolution;
 import kg.alatoo.sayakat.planner.domain.Visit;
+import kg.alatoo.sayakat.planner.routing.TravelMatrix;
 import kg.alatoo.sayakat.planner.solver.TripSchedule;
-import kg.alatoo.sayakat.routing.TravelMatrix;
 
 public final class GreedyPlanner {
 

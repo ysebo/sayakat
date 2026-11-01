@@ -13,8 +13,10 @@ import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
-import kg.alatoo.sayakat.user.Role;
-import kg.alatoo.sayakat.user.User;
+
+import kg.alatoo.sayakat.config.properties.JwtProperties;
+import kg.alatoo.sayakat.entity.User;
+import kg.alatoo.sayakat.entity.enums.Role;
 
 @Service
 public class JwtService {

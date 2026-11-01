@@ -6,6 +6,8 @@ import ai.timefold.solver.core.api.score.stream.ConstraintCollectors;
 import ai.timefold.solver.core.api.score.stream.ConstraintFactory;
 import ai.timefold.solver.core.api.score.stream.ConstraintProvider;
 import ai.timefold.solver.core.api.score.stream.uni.UniConstraintStream;
+
+import kg.alatoo.sayakat.planner.domain.Lodging;
 import kg.alatoo.sayakat.planner.domain.TripDay;
 import kg.alatoo.sayakat.planner.domain.Visit;
 

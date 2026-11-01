@@ -11,7 +11,10 @@ import kg.alatoo.sayakat.planner.domain.TripDay;
 import kg.alatoo.sayakat.planner.domain.TripSettings;
 import kg.alatoo.sayakat.planner.domain.TripSolution;
 import kg.alatoo.sayakat.planner.domain.Visit;
-import kg.alatoo.sayakat.routing.TravelMatrix;
+import kg.alatoo.sayakat.planner.routing.TravelMatrix;
+import kg.alatoo.sayakat.planner.solver.TripProblemFactory.CandidateLodging;
+import kg.alatoo.sayakat.planner.solver.TripProblemFactory.CandidatePoi;
+import kg.alatoo.sayakat.planner.solver.TripProblemFactory.TripRequest;
 
 public final class TripProblemFactory {
 
