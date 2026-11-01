@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: sayakat-api
+  profiles:
+    default: dev
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/sayakat}
+    username: ${DB_USER:sayakat}
+    password: ${DB_PASSWORD:sayakat}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc.batch_size: 500
+  flyway:
+    enabled: true
+  mvc:
+    problemdetails:
+      enabled: true
+
+timefold:
+  solver:
+    termination:
+      spent-limit: 20s
+      unimproved-spent-limit: 5s
+
+sayakat:
+  jwt:
+    secret: ${JWT_SECRET:}
+    ttl: 12h
+  cors:
+    allowed-origins: ${CORS_ORIGINS:http://localhost:5173}
+  routing:
+    provider: ${ROUTING_PROVIDER:haversine}
+    osrm-url: ${OSRM_URL:http://localhost:5000}
+    osrm-duration-factor: 1.25
+    haversine-detour-factor: 1.4
+    haversine-speed-kmh: 50
+  planner:
+    default-city-lodging-price: 2500
+    max-lodging-transfer-min: 45
+    transport-cost-per-km: 12
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
