@@ -25,7 +25,7 @@ async function run(name, action) {
 </script>
 
 <template>
-  <h1 class="mb-6 text-3xl font-semibold">Dataset &amp; travel matrix</h1>
+  <h1 class="mb-6 text-3xl font-medium">Dataset &amp; travel matrix</h1>
 
   <div class="grid gap-6 md:grid-cols-2">
     <Card>

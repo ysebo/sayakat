@@ -55,13 +55,13 @@ async function submitDecision() {
 <template>
   <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
     <div>
-      <h1 class="text-3xl font-semibold">Booking requests</h1>
+      <h1 class="text-3xl font-medium">Booking requests</h1>
       <p class="text-surface-500">{{ pendingCount }} waiting for your answer</p>
     </div>
     <SelectButton v-model="filter" :options="filters" option-label="label" option-value="value" :allow-empty="false" />
   </div>
 
-  <DataTable :value="shown" :loading="loading" data-key="id" striped-rows class="rounded-xl bg-white shadow-sm"
+  <DataTable :value="shown" :loading="loading" data-key="id" striped-rows class="overflow-hidden rounded-xl border border-stone-200 bg-white"
              paginator :rows="10" :rows-per-page-options="[10, 25]">
     <template #empty>No requests.</template>
     <Column field="serviceTitle" header="Service" />

@@ -71,13 +71,13 @@ async function save() {
 <template>
   <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
     <div>
-      <h1 class="text-3xl font-semibold">My services</h1>
+      <h1 class="text-3xl font-medium">My services</h1>
       <p class="text-surface-500">Accommodation with a location is offered to the route planner as a place to sleep.</p>
     </div>
     <Button label="Add service" icon="pi pi-plus" @click="open(null)" />
   </div>
 
-  <DataTable :value="services" :loading="loading" data-key="id" class="rounded-xl bg-white shadow-sm" paginator :rows="10">
+  <DataTable :value="services" :loading="loading" data-key="id" class="overflow-hidden rounded-xl border border-stone-200 bg-white" paginator :rows="10">
     <template #empty>No services yet.</template>
     <Column field="title" header="Title" sortable />
     <Column header="Type">

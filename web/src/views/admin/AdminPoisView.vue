@@ -90,7 +90,7 @@ function remove(poi) {
 <template>
   <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
     <div>
-      <h1 class="text-3xl font-semibold">Attractions</h1>
+      <h1 class="text-3xl font-medium">Attractions</h1>
       <p class="text-surface-500">{{ pois.length }} places in the dataset</p>
     </div>
     <div class="flex gap-2">
@@ -102,7 +102,7 @@ function remove(poi) {
     </div>
   </div>
 
-  <DataTable :value="shown" :loading="loading" data-key="id" class="rounded-xl bg-white shadow-sm" paginator :rows="15"
+  <DataTable :value="shown" :loading="loading" data-key="id" class="overflow-hidden rounded-xl border border-stone-200 bg-white" paginator :rows="15"
              sort-field="name" :sort-order="1" size="small">
     <Column field="name" header="Name" sortable />
     <Column field="category" header="Category" sortable>
