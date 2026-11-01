@@ -9,14 +9,14 @@ import org.springframework.context.event.EventListener;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
-import kg.alatoo.sayakat.marketplace.Provider;
-import kg.alatoo.sayakat.marketplace.ProviderRepository;
-import kg.alatoo.sayakat.poi.DatasetImporter;
-import kg.alatoo.sayakat.routing.TravelMatrixService;
-import kg.alatoo.sayakat.user.AuthService;
-import kg.alatoo.sayakat.user.Role;
-import kg.alatoo.sayakat.user.User;
-import kg.alatoo.sayakat.user.UserRepository;
+import kg.alatoo.sayakat.entity.Provider;
+import kg.alatoo.sayakat.entity.User;
+import kg.alatoo.sayakat.entity.enums.Role;
+import kg.alatoo.sayakat.repository.ProviderRepository;
+import kg.alatoo.sayakat.repository.UserRepository;
+import kg.alatoo.sayakat.service.AuthService;
+import kg.alatoo.sayakat.service.DatasetService;
+import kg.alatoo.sayakat.service.TravelMatrixService;
 
 @Component
 @ConditionalOnProperty(name = "sayakat.dev.seed", havingValue = "true")
@@ -27,13 +27,13 @@ public class DevDataSeeder {
     private final UserRepository users;
     private final ProviderRepository providers;
     private final AuthService authService;
-    private final DatasetImporter importer;
+    private final DatasetService importer;
     private final TravelMatrixService matrixService;
     private final JdbcTemplate jdbc;
     private final String demoPassword;
 
     public DevDataSeeder(UserRepository users, ProviderRepository providers, AuthService authService,
-                         DatasetImporter importer, TravelMatrixService matrixService, JdbcTemplate jdbc,
+                         DatasetService importer, TravelMatrixService matrixService, JdbcTemplate jdbc,
                          @Value("${sayakat.dev.demo-password}") String demoPassword) {
         this.users = users;
         this.providers = providers;
