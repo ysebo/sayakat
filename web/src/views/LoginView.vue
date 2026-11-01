@@ -44,10 +44,10 @@ async function submit() {
                   autocomplete="current-password" />
       </div>
       <Message v-if="error" severity="error" size="small">{{ error }}</Message>
-      <Button type="submit" label="Sign in" :loading="loading" class="w-full" />
+      <Button type="submit" label="Sign in" :loading="loading" severity="contrast" class="w-full !py-2.5" />
     </form>
-    <p class="mt-6 text-center text-sm text-lake-900/70">
-      New here? <RouterLink :to="{ name: 'register' }" class="font-medium text-lake-700">Create an account</RouterLink>
+    <p class="mt-6 text-sm text-stone-500">
+      New here? <RouterLink :to="{ name: 'register' }" class="font-medium text-ink underline underline-offset-4">Create an account</RouterLink>
     </p>
   </AuthCard>
 </template>

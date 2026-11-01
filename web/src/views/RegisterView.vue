@@ -64,10 +64,10 @@ async function submit() {
                   prompt-label="At least 8 characters" />
       </div>
       <Message v-if="error" severity="error" size="small">{{ error }}</Message>
-      <Button type="submit" label="Create account" :loading="loading" class="w-full" />
+      <Button type="submit" label="Create account" :loading="loading" severity="contrast" class="w-full !py-2.5" />
     </form>
-    <p class="mt-6 text-center text-sm text-lake-900/70">
-      Already have an account? <RouterLink :to="{ name: 'login' }" class="font-medium text-lake-700">Sign in</RouterLink>
+    <p class="mt-6 text-sm text-stone-500">
+      Already have an account? <RouterLink :to="{ name: 'login' }" class="font-medium text-ink underline underline-offset-4">Sign in</RouterLink>
     </p>
   </AuthCard>
 </template>
