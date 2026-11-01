@@ -21,6 +21,23 @@ cd web && npm install && npm run dev   # http://localhost:5173
 The `dev` profile seeds demo data on first start. Demo accounts: `tourist@sayakat.local`,
 `provider@sayakat.local`, `admin@sayakat.local` with password `demo12345`.
 
+## Backend structure
+
+```
+kg.alatoo.sayakat
+├── controller       REST endpoints
+├── service          service interfaces
+│   └── impl         implementations
+├── repository       Spring Data repositories
+├── entity           JPA entities (+ enums)
+├── dto              request / response records
+├── config           security, OpenAPI, properties, dev seeding
+├── security         JWT filter and token service
+├── client           OSRM client
+├── exception, util
+└── planner          route optimisation engine (Timefold domain, constraints, greedy baseline)
+```
+
 ## Route planner
 
 The planner solves a multi-day orienteering problem with time windows and lodging selection:
@@ -29,12 +46,14 @@ The planner solves a multi-day orienteering problem with time windows and lodgin
 - **medium:** maximise the personalised value of visited places
 - **soft:** minimise driving time
 
-A greedy algorithm is included as a baseline. To compare it with Timefold:
+Production runs a hybrid: a greedy route is used as a warm start for Timefold local search.
+To reproduce the evaluation:
 
 ```bash
 cd api && mvn -Pexperiments test
+node ../docs/evaluation/build-report.mjs
 ```
 
-Results are written to `api/target/experiments/`.
+See [docs/evaluation](docs/evaluation/README.md) for the method and results.
 
 For real road travel times, see [infra/osrm](infra/osrm/README.md).
