@@ -1,0 +1,28 @@
+{
+  "name": "sayakat-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@primeuix/themes": "^1.2.5",
+    "axios": "^1.13.0",
+    "leaflet": "^1.9.4",
+    "pinia": "^3.0.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.5.5",
+    "vue": "^3.5.0",
+    "vue-router": "^4.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "tailwindcss": "^4.3.0",
+    "tailwindcss-primeui": "^0.6.0",
+    "vite": "^7.3.7"
+  }
+}
