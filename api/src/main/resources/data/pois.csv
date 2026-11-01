@@ -1,0 +1,47 @@
+external_id,name,category,tags,region,lat,lon,visit_duration_min,cost_kgs,opens_at,closes_at,season_from,season_to,popularity,source,description
+bishkek,Bishkek,CITY,city;food,Chuy,42.8746,74.5698,60,0,,,1,12,4,manual,Capital of Kyrgyzstan and the usual start of a trip
+ala-too-square,Ala-Too Square,CULTURE,city;photo,Chuy,42.8766,74.6036,45,0,,,1,12,3,manual,Central square with the Manas monument and the changing of the guard
+history-museum,State Historical Museum,MUSEUM,city;silk-road,Chuy,42.8770,74.6040,90,300,10:00,18:00,1,12,3,manual,National history museum on Ala-Too Square
+osh-bazaar-bishkek,Osh Bazaar (Bishkek),BAZAAR,food;city,Chuy,42.8749,74.5701,90,0,08:00,17:00,1,12,3,manual,Largest open-air market in Bishkek
+ala-archa,Ala-Archa National Park,NATURE,mountains;walking;photo,Chuy,42.5650,74.4830,240,300,,,1,12,5,manual,Alpine gorge 40 km south of Bishkek with trails to Ak-Sai glacier
+burana,Burana Tower,HISTORY,silk-road;photo,Chuy,42.7467,75.2500,90,200,09:00,18:00,1,12,4,manual,11th-century minaret of the Karakhanid city of Balasagun with balbal stones
+issyk-ata,Issyk-Ata hot springs,HOT_SPRING,relax;mountains,Chuy,42.6286,74.9580,180,500,,,1,12,2,manual,Soviet-era spa with thermal pools in a mountain gorge
+kegeti,Kegeti waterfall,HIKING,mountains;walking,Chuy,42.6720,75.0400,240,0,,,5,10,2,manual,Gorge with a waterfall reachable by a short hike
+konorchek,Konorchek canyons,HIKING,photo;walking,Chuy,42.6000,75.8200,240,0,,,4,10,3,manual,Red sandstone canyons off the Bishkek-Balykchy road
+chon-kemin,Chon-Kemin valley,NATURE,horse;mountains;yurt,Chuy,42.7800,76.2000,240,0,,,5,10,3,manual,Green valley and national park popular for horse riding
+cholpon-ata-petroglyphs,Cholpon-Ata petroglyphs,HISTORY,silk-road;photo,Issyk-Kul,42.6560,77.0800,90,200,09:00,19:00,1,12,4,manual,Open-air field of Bronze Age and Saka rock carvings
+cholpon-ata-beach,Cholpon-Ata beach,LAKE,family;relax,Issyk-Kul,42.6480,77.0860,180,0,,,6,9,4,manual,Main beach area on the north shore of Issyk-Kul
+rukh-ordo,Rukh Ordo cultural centre,CULTURE,photo;family,Issyk-Kul,42.6460,77.0670,120,500,09:00,18:00,1,12,4,manual,Lakeside complex of chapels for world religions and a museum
+grigorievka,Grigorievka gorge,NATURE,mountains;walking;horse,Issyk-Kul,42.7200,77.5000,180,0,,,5,10,3,manual,Wide valley with spruce forest north of the lake
+semenovka,Semenovka gorge,NATURE,mountains;horse,Issyk-Kul,42.7500,77.6300,180,0,,,5,10,3,manual,Alpine meadows and yurt camps
+karakol-cathedral,Holy Trinity Cathedral (Karakol),CULTURE,city;photo,Issyk-Kul,42.4910,78.3930,45,0,09:00,18:00,1,12,3,manual,Wooden Orthodox cathedral built without nails
+dungan-mosque,Dungan Mosque (Karakol),CULTURE,city;photo,Issyk-Kul,42.4960,78.3990,45,100,09:00,18:00,1,12,3,manual,Chinese-style wooden mosque built by Dungan craftsmen
+przhevalsky,Przhevalsky memorial museum,MUSEUM,history;silk-road,Issyk-Kul,42.5200,78.3400,60,200,09:00,17:00,1,12,2,manual,Museum and grave of the explorer Nikolai Przhevalsky
+jeti-oguz,Jeti-Oguz rocks,NATURE,photo;mountains,Issyk-Kul,42.3330,78.2200,120,0,,,1,12,5,manual,Seven Bulls red cliffs and the Broken Heart rock
+altyn-arashan,Altyn-Arashan hot springs,HOT_SPRING,mountains;walking;yurt,Issyk-Kul,42.3700,78.6200,480,300,,,6,9,4,manual,Valley with hot springs reachable by trek or 4x4
+ala-kul,Ala-Kul lake viewpoint,HIKING,mountains;photo,Issyk-Kul,42.2967,78.5294,480,0,,,7,9,5,manual,Turquoise glacial lake at 3500 m; full trek takes 2-3 days
+skazka,Fairy Tale canyon (Skazka),NATURE,photo;family,Issyk-Kul,42.1700,77.3600,120,200,,,1,12,5,manual,Wind-eroded red sandstone formations on the south shore
+barskoon,Barskoon waterfalls,NATURE,mountains;walking,Issyk-Kul,42.0800,77.6000,150,0,,,5,10,4,manual,Gorge with waterfalls and the Gagarin monument
+bokonbaevo-eagle,Eagle hunting show (Bokonbaevo),CULTURE,horse;photo;family,Issyk-Kul,42.1100,76.9900,120,1500,10:00,18:00,4,10,4,manual,Demonstration of traditional hunting with golden eagles
+kochkor-felt,Kochkor felt workshop,CULTURE,yurt;crafts,Naryn,42.2167,75.7550,90,0,09:00,17:00,1,12,3,manual,Women's cooperative making shyrdak felt carpets
+son-kul,Son-Kul lake,LAKE,yurt;horse;mountains;photo,Naryn,41.8300,75.1300,300,0,,,6,9,5,manual,High-altitude lake at 3000 m with summer yurt camps of shepherds
+naryn-town,Naryn town,CITY,city,Naryn,41.4287,75.9911,60,0,,,1,12,2,manual,Regional centre on the Naryn river
+salkyn-tor,Salkyn-Tor national park,NATURE,mountains;walking,Naryn,41.4000,76.1500,180,200,,,5,10,2,manual,Spruce forest gorge east of Naryn
+koshoi-korgon,Koshoi-Korgon fortress,HISTORY,silk-road,Naryn,40.9500,75.9000,90,100,09:00,17:00,4,10,2,manual,Ruins of a medieval fortress near At-Bashy with a small museum
+tash-rabat,Tash-Rabat caravanserai,HISTORY,silk-road;yurt;photo,Naryn,40.8200,75.2900,120,200,,,5,10,5,manual,15th-century stone caravanserai in a remote valley
+chatyr-kul,Chatyr-Kul lake,LAKE,mountains;photo,Naryn,40.6200,75.3000,120,0,,,6,9,3,manual,Alpine lake near the Chinese border (border-zone permit required)
+kel-suu,Kel-Suu lake,LAKE,mountains;photo,Naryn,40.8900,76.8600,300,0,,,6,9,4,manual,Fjord-like lake in the Ak-Sai valley (border-zone permit required)
+sary-chelek,Sary-Chelek lake,LAKE,mountains;walking;photo,Jalal-Abad,41.8500,71.9500,300,500,,,5,10,5,manual,Biosphere reserve with a forested mountain lake
+arslanbob-forest,Arslanbob walnut forest,NATURE,walking;food,Jalal-Abad,41.3300,72.9400,300,0,,,5,10,4,manual,One of the largest wild walnut forests in the world
+arslanbob-waterfall,Arslanbob big waterfall,HIKING,walking;mountains,Jalal-Abad,41.3600,72.9600,240,0,,,5,10,3,manual,80 m waterfall above Arslanbob village
+toktogul,Toktogul reservoir viewpoint,VIEWPOINT,photo,Jalal-Abad,41.8000,72.9500,45,0,,,1,12,2,manual,Viewpoint over the turquoise reservoir on the Bishkek-Osh road
+sulaiman-too,Sulaiman-Too sacred mountain,HISTORY,silk-road;city;photo,Osh,40.5296,72.7860,120,100,08:00,19:00,1,12,5,manual,UNESCO World Heritage sacred mountain in the centre of Osh
+jayma-bazaar,Jayma Bazaar (Osh),BAZAAR,food;city;silk-road,Osh,40.5300,72.8000,90,0,08:00,17:00,1,12,4,manual,One of the oldest markets of Central Asia
+uzgen,Uzgen minaret and mausoleums,HISTORY,silk-road,Osh,40.7700,73.3000,60,100,09:00,18:00,1,12,3,manual,Karakhanid minaret and mausoleum complex
+sary-mogol,Sary-Mogol village,CULTURE,mountains;yurt,Osh,39.6800,72.8800,60,0,,,5,10,2,manual,Gateway village to the Alay valley and Lenin Peak
+tulpar-kul,Tulpar-Kul lake,LAKE,mountains;yurt;photo,Osh,39.4600,72.8900,240,0,,,6,9,4,manual,Lake below Lenin Peak with yurt camps
+lenin-peak-bc,Lenin Peak base camp (Achik-Tash),HIKING,mountains;photo,Osh,39.4200,72.9000,480,0,,,7,8,4,manual,Base camp at 3600 m; trekking to Travellers' Pass
+manas-ordo,Manas Ordo complex,HISTORY,silk-road;culture,Talas,42.5110,72.3925,90,200,09:00,18:00,1,12,3,manual,Memorial complex of the epic hero Manas
+besh-tash,Besh-Tash national park,NATURE,mountains;walking,Talas,42.3600,72.3200,240,200,,,5,10,2,manual,Gorge with a mountain lake south of Talas
+too-ashuu,Too-Ashuu pass,VIEWPOINT,mountains;photo,Chuy,42.3300,73.8000,30,0,,,1,12,3,manual,3200 m pass and tunnel on the Bishkek-Osh road
+suusamyr,Suusamyr valley,NATURE,horse;yurt;mountains,Chuy,42.1800,73.9000,180,0,,,5,10,3,manual,High valley with summer pastures and kumys stands
