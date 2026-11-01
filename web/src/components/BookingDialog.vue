@@ -61,7 +61,7 @@ async function submit() {
 <template>
   <Dialog v-model:visible="visible" modal :header="service?.title" class="w-[min(32rem,95vw)]">
     <template v-if="service">
-      <p class="-mt-2 mb-5 text-sm text-lake-900/60">
+      <p class="-mt-2 mb-5 text-sm text-stone-500">
         {{ service.providerName }} · {{ som(service.priceKgs) }} {{ unitLabel(service.priceUnit) }}
       </p>
       <div class="grid gap-4 sm:grid-cols-2">
