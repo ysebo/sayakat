@@ -1,0 +1,6 @@
+infra/osrm/data/
+.claude/
+.idea/
+.vscode/
+*.iml
+node_modules/
