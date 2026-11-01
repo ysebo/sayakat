@@ -17,8 +17,18 @@ import { reveal } from './directives/reveal'
 const SayakatPreset = definePreset(Aura, {
   semantic: {
     primary: {
-      50: '#eef4fa', 100: '#d5e3f1', 200: '#aac6e2', 300: '#7fa6cc', 400: '#5588b6',
-      500: '#2c6aa0', 600: '#245c91', 700: '#1d4e89', 800: '#174271', 900: '#14365c', 950: '#0b2240',
+      50: '{teal.50}', 100: '{teal.100}', 200: '{teal.200}', 300: '{teal.300}', 400: '{teal.400}',
+      500: '{teal.500}', 600: '{teal.600}', 700: '{teal.700}', 800: '{teal.800}', 900: '{teal.900}', 950: '{teal.950}',
+    },
+    colorScheme: {
+      light: {
+        surface: {
+          0: '#ffffff', 50: '{stone.50}', 100: '{stone.100}', 200: '{stone.200}', 300: '{stone.300}',
+          400: '{stone.400}', 500: '{stone.500}', 600: '{stone.600}', 700: '{stone.700}', 800: '{stone.800}',
+          900: '{stone.900}', 950: '{stone.950}',
+        },
+        primary: { color: '{teal.600}', hoverColor: '{teal.700}', activeColor: '{teal.800}' },
+      },
     },
   },
 })
